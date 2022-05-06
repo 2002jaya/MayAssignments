@@ -1,0 +1,4 @@
+e={'empno':1,'empname':'Aditya','edesg':'Tech lead','Salary':40000}
+
+print(e['empno'],e['empname'],e['edesg'],e['Salary'])
+
