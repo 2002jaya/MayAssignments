@@ -1,0 +1,4 @@
+s={'sno':1,'sname':'Aditya', 'gender':'MALE', 'group':'BCA', 'result':8.4}
+
+print(s['sno'],s['sname'],s['gender'],s['group'],s['result'])
+
