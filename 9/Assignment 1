@@ -8,7 +8,7 @@ for i in range(n):
 
       d[x[0]]=x[1]
 
-while True:
+while "True":
 
       try:
 
