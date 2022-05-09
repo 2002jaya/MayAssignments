@@ -1,0 +1,7 @@
+d={'jaanu':1,'reshma':2,'nagu':3,'sri':4}
+
+if 'reshma' in d:
+
+    del d['reshma']
+
+print(d)
