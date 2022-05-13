@@ -1,0 +1,27 @@
+def is_prime(n):  
+
+    if n==1:
+
+        return False
+
+    i=2
+
+    while i*i<=n:
+
+        if n%i==0:
+
+            return False
+
+        i+=1
+
+    return True
+
+c=0
+a=int(input())
+b=int(input())
+for n in range(a,b):
+
+    c+=int(is_prime(n))
+
+print(c)
+
