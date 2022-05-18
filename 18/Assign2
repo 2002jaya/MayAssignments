@@ -1,0 +1,35 @@
+def count(nums,k):
+
+       n=len(nums)
+
+       l=[]
+
+       for i in range(k+1):
+
+              l.append(0)
+
+       cs=0
+
+       for i in range(n):
+
+             cs+=nums[i]
+
+             l[((cs%k)+k)%k]+=1
+
+       c=0
+
+       for i in range(k):
+
+             if(l[i]>1):
+
+                        c+=(l[i]*l[i]-1)//2
+
+       return c
+
+nums=[]
+
+nums.extend(list(map(int,input().split())))
+
+k=int(input())
+
+print(count(nums,k))
