@@ -1,0 +1,44 @@
+def subarr(nums,k):
+
+       n=len(nums)
+
+       if n==0:
+
+              return 0
+
+       c=0
+
+       d={}
+
+       cs=0
+
+       for i in range(n):
+
+              cs+=nums[i]
+
+              if cs==k:
+
+                       c+=1
+
+              if cs-k in d:
+
+                       c+=d[cs-k]
+
+              if cs in d:
+
+                       d[cs]+=1
+
+              else:
+
+                       d[cs]=1
+
+       return c
+
+nums=[]
+
+nums.extend(list(map(int,input().split())))
+
+k=int(input())
+
+print(subarr(nums,k))
+
