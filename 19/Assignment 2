@@ -1,0 +1,33 @@
+import math
+
+def solve(a,b):
+
+       seive=["TRUE" for i in range(b)]
+
+       seive[0]=seive[1]=False
+
+       x=int(math.sqrt(b))
+
+       for i in range(2,x+1):
+
+              if seive[i]:
+
+                       for j in range(i*i,b,i):
+
+                              seive[j]=False
+
+       s=0
+
+       for i in range(a,b):
+
+              if seive[i]:
+
+                             s+=i
+
+       return s
+
+a=int(input())
+
+b=int(input())
+
+print(solve(a,b))
